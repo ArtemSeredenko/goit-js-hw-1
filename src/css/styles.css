@@ -1,9 +1,3 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 @import url('../../node_modules/modern-normalize/modern-normalize.css');
 @import url('./reset.css');
 
@@ -203,6 +197,39 @@
   }
 }
 
-.visible {
-  visibility: visible;
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  width: 150px;
+  height: 40px;
+
+  padding: 8px 16px;
+
+  border-radius: 8px;
+  background-color: #4e75ff;
+  border: none;
+
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.64px;
+
+  transition: background-color 300ms ease-in-out;
+}
+
+.load-more:hover {
+  background-color: #191970;
+}
+
+.hidden {
+  display: none;
 }
